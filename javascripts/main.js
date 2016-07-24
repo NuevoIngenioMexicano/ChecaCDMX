@@ -1,13 +1,13 @@
 function mapaLibros(){
-	window.open('menu.html','_self',false);
+	window.open('Ruta_libros','_self',false);
 }
 
 function mapaBodas(){
-	window.open('menu.html','_self',false);
+	window.open('Ruta_boda.html','_self',false);
 }
 
 function mapaPapeleria(){
-	window.open('menu.html','_self',false);
+	window.open('Ruta_pape.html','_self',false);
 }
 
 function trofeos(){
