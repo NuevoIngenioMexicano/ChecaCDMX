@@ -134,6 +134,10 @@
 			}, {scope: 'email'});
 		}
 		
+		function sinCuenta(){
+			window.open('menu.html','_self',false)
+		}
+		
 		// getting basic user info
 		function getInfo() {
 			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id'}, function(response) {
@@ -162,7 +166,7 @@
             <tr>
                 <th colspan="2">
                     <br>
-                    <button onclick="login()" id="login">Ve directo</button>
+                    <button onclick="sinCuenta()" id="sinCuenta">Ve directo</button>
                 </th>
                 <th>
                 </th>
