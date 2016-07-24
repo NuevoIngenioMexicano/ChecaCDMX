@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ChecaCDMX</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="imagenes/ICONO.png" />
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:900,500' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<nav>
+		<table>
+			<tr>
+				<th>
+					<img class="fotoUsuario" src="imagenes/logUsuario.gif">
+				</th>
+				<th>
+					<h1>Hola sergio!</h1>
+					<p><font class="numero">4</font><font class="textoNum"> Rutas Checadas</font></p>
+					<p><font class="numero">2</font><font class="textoNum"> Rutas Creadas</font></p>
+				</th>
+				<th>
+					<button id="trofeo"></button>
+				</th>
+			</tr>
+		</table>
+	</nav>
+
+	<!--Libros-->
+	<div id="libros" class="divBoton">
+		<button class="botonT" onclick="mapaLibros()"></button>
+		<table>
+			<tr>
+				<th>
+					<img class="logo" src="imagenes/logoLibro.gif">
+				</th>
+				<th>
+					<h1>¿Te gusta leer?</h1>
+					<font class="checa des">Checa</font><font class="complemento des"> la ruta de los libros de 2da mano.</font>
+				</th>
+			</tr>
+		</table>
+	</div>
+
+	<!--Bodas-->
+	<div id="bodas" class="divBoton">
+		<button class="botonT" onclick="mapaBodas()"></button>
+		<table>
+			<tr>
+				<th>
+					<img class="logo" src="imagenes/logoBoda.gif">
+				</th>
+				<th>
+					<h1>¿Te vas a casar?</h1>
+					<font class="checa des">CHECA</font><font class="complemento des"> la ruta con todo para tu boda.</font>
+				</th>
+			</tr>	
+		</table>
+	</div>
+
+	<!--Papeleria-->
+	<div id="papeleria" class="divBoton">
+		<button class="botonT" onclick="mapaPapeleria()"></button>
+		<table>
+			<tr>
+				<th>
+					<img class="logo" src="imagenes/logoPape.gif">
+				</th>
+				<th>
+					<h1>¿Listo para el regreso a clases?</h1>
+					<font class="checa des">CHECA</font><font class="complemento des"> la ruta de Papelerías.</font>
+				</th>
+			</tr>	
+		</table>
+	</div>
+
+	<!--Recomendación-->
+	<div id="recomendacion" class="divBoton">
+		<button class="botonT" onclick="mapaY()"></button>
+		<table>
+			<tr>
+				<th>
+					<img class="logo" src="imagenes/logoReco.gif">
+				</th>
+				<th>
+					<h1>¿Te gusta la comida vegetariana?</h1>
+					<font class="checa des">CHECA</font><font class="complemento des"> el restaurante de esta semana.</font>
+				</th>
+			</tr>	
+		</table>
+	</div>
+
+	<!--Conocer-->
+	<div id="conocer" class="divBoton">
+		<button class="botonT" onclick="mapaX()"></button>
+		<table>
+			<tr>
+				<th>
+					<img class="logo" src="imagenes/logoLugar.gif">
+				</th>
+				<th>
+					<h1>¿Ganas de conocer algo nuevo?</h1>
+					<font class="checa des">CHECA</font><font class="complemento des"> la recomendación de esta semana.</font>
+				</th>
+			</tr>	
+		</table>
+	</div>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
