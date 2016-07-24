@@ -102,7 +102,7 @@
 		    });
 		    FB.getLoginStatus(function(response) {
 		    	if (response.status === 'connected') {
-		    		//window.open('checa.html','_self',false)
+		    		window.open('menu.html','_self',false)
 		    		document.getElementById('login').style.visibility = 'hidden';
 		    	} else if (response.status === 'not_authorized') {
 		    		document.getElementById('status').innerHTML = 'We are not logged in.'
@@ -123,7 +123,7 @@
 		function login() {
 			FB.login(function(response) {
 				if (response.status === 'connected') {
-                    //window.open('checa.html','_self',false)
+                    		window.open('menu.html','_self',false)
                     
 		    		document.getElementById('login').style.visibility = 'hidden';
 		    	} else if (response.status === 'not_authorized') {
