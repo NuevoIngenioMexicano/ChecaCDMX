@@ -15,9 +15,9 @@ function trofeos(){
 }
 
 function recomendacion(){
-	window.open('menu.html','_self',false);
+	window.open('404error.html','_self',false);
 }
 
 function conocer(){
-	window.open('menu.html','_self',false);
+	window.open('404error.html','_self',false);
 }
