@@ -1,0 +1,173 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />    
+    <style>
+        body {
+            background-color: #010225;
+            background-image: url("imagenes/edificiosSolo.gif"), url("imagenes/backFondo_0.png");
+            background-position: right bottom, left top;
+            background-repeat: repeat-x, repeat;
+            padding: 15px;
+        }
+        @media only screen and (min-width: 1280px) {
+            img {
+                max-width: 40%;
+                display: block;
+                margin: 0 auto;
+                height: auto;
+            }
+        }
+        @media only screen and (min-width: 415px){
+            button{
+                width:  100%;
+                height: 80px;
+                font-size: 24px;
+            }
+            img {
+                padding-top: 40px;
+                max-width: 60%;
+                display: block;
+                margin: 0 auto;
+                height: auto;
+            }
+        }
+        button {
+          display: block;
+          margin:auto;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #010225;
+          border: none;
+          border-radius: 8px;
+          box-shadow: 0 9px #999;
+        }
+
+        button:hover {background-color: #05205b}
+
+        button:active {
+          background-color: #010225;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+       /*_________________________________________________*/
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+        }
+
+        input[type=text]:focus {
+            border: 3px solid #05205b;
+        }
+        #buttonFACE{
+            background-color: white;
+            color: #008CBA;
+            border: 2px solid #008CBA;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        #button2 {
+            background-color: #008CBA;
+            color: white;
+            border: 2px solid #008CBA;
+        }
+</style>
+    </head>
+    <body>
+        <script>
+		// initialize and setup facebook js sdk
+		window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '1036345453139986',
+		      xfbml      : true,
+		      version    : 'v2.5'
+		    });
+		    FB.getLoginStatus(function(response) {
+		    	if (response.status === 'connected') {
+		    		//window.open('checa.html','_self',false)
+		    		document.getElementById('login').style.visibility = 'hidden';
+		    	} else if (response.status === 'not_authorized') {
+		    		document.getElementById('status').innerHTML = 'We are not logged in.'
+		    	} else {
+		    		document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
+		    	}
+		    });
+		};
+		(function(d, s, id){
+		    var js, fjs = d.getElementsByTagName(s)[0];
+		    if (d.getElementById(id)) {return;}
+		    js = d.createElement(s); js.id = id;
+		    js.src = "//connect.facebook.net/en_US/sdk.js";
+		    fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		
+		// login with facebook with extra permissions
+		function login() {
+			FB.login(function(response) {
+				if (response.status === 'connected') {
+                    //window.open('checa.html','_self',false)
+                    
+		    		document.getElementById('login').style.visibility = 'hidden';
+		    	} else if (response.status === 'not_authorized') {
+		    		document.getElementById('status').innerHTML = 'We are not logged in.'
+		    	} else {
+		    		document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
+		    	}
+			}, {scope: 'email'});
+		}
+		
+		// getting basic user info
+		function getInfo() {
+			FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id'}, function(response) {
+				document.getElementById('status').innerHTML = response.name;
+			});
+		}
+            /////////////////////////////////////////////////////
+	</script>
+        <header>
+            <!--<br><br><br><br>-->
+           <img src="imagenes/CHECA-LOGO.gif">
+        </header>
+        <br><br>
+        <table align="center" width = 500px>
+            
+            <br><br>
+            <tr>
+                
+                <th colspan="2">
+                    <br>
+                    <button onclick="login()" id="login">Iniciar Sesión con Facebook</button>
+                </th>
+                <th>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <br>
+                    <button id="login">Ve directo</button>
+                </th>
+                <th>
+                </th>
+                
+            </tr>
+            
+        </table>
+            
+        
+    </body>
+</html>
