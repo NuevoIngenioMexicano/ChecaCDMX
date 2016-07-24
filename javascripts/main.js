@@ -11,7 +11,7 @@ function mapaPapeleria(){
 }
 
 function trofeos(){
-	window.open('menu.html','_self',false);
+	window.open('trofeos.html,'_self',false);
 }
 
 function recomendacion(){
