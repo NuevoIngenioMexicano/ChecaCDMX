@@ -95,9 +95,72 @@
         input[type=text]:focus {
             border: 3px solid #05205b;
         }
+        
+        .divBoton{
+	width: 100%
+	height: 300px;
+	color: #fff;
+	position: relative;
+	padding-bottom: 10px;
+}
+.tituloG{
+  font-weight: 900; 
+	margin-bottom: 8px;
+	margin-top: 10px;
+	color: #fff;
+}
+.logo{
+	padding-top: 10px;
+	padding-right: 10px;
+	height: 100px;
+	width: 100px;
+}
+.checa{
+	font-weight: 900; 
+}
+.complemento{
+	font-weight: 500; 
+}
+@media only screen and (max-width: 1280px) {
+	.tituloG{
+		font-size: 26px;
+	}
+    .des{
+    	font-size: 20px;
+    }
+    .logo{
+		padding-left: 10px;
+    }
+}
+@media only screen and (min-width: 415px){
+	.tituloG{
+		font-size: 36px;
+	}
+	.logo{
+		padding-left: 400px;
+    }
+}
+
+#libros{
+	background-image: url("../imagenes/barraLibro.gif");
+}
     </style>
   </head>
   <body>
+  <div id="libros" class="divBoton">
+		<button class="botonT" onclick="mapaLibros()"></button>
+		<table>
+			<tr>
+				<th>
+					<img class="logo" src="imagenes/logoLibro.gif">
+				</th>
+				<th>
+					<h1 class="tituloG">¿Te gusta leer?</h1>
+					<font class="checa des">Checa</font><font class="complemento des"> la ruta de los libros de 2da mano.</font>
+				</th>
+			</tr>
+		</table>
+	</div>
     <table align="center" width="100%">
         <tr>
             <th><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Librería Popular</button>
