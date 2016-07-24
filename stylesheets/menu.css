@@ -1,0 +1,155 @@
+body{
+	font-family: 'Alegreya Sans', sans-serif;
+	margin: 0px;
+}
+
+nav{
+	background-color: #0c0612;
+	width: 100%;
+}
+
+h1{
+	font-weight: 900; 
+	margin-bottom: 8px;
+	margin-top: 10px;
+	color: #fff;
+}
+
+table{
+	text-align: left;
+}
+
+button{
+	border: none !important;
+}
+
+button:hover{
+	background-color: rgba(0,0,0, 0.2) !important;
+	cursor: pointer;
+}
+
+.divBoton{
+	width: 100%
+	height: 300px;
+	color: #fff;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.divBoton:hover{
+	background-color: rgba();
+}
+
+#libros{
+	background-image: url("../imagenes/barraLibro.gif");
+}
+
+#bodas{
+	background-image: url("../imagenes/barraBoda.gif");
+}
+
+#papeleria{
+	background-image: url("../imagenes/barraPape.gif");
+}
+
+#recomendacion{
+	background-image: url("../imagenes/barraReco.gif");
+}
+
+#conocer{
+	background-image: url("../imagenes/barraLugara.gif");
+}
+
+.botonT{
+	background-color: rgba(192,192,192,0.0);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.logo{
+	padding-top: 10px;
+	padding-right: 10px;
+	height: 100px;
+	width: 100px;
+}
+
+.checa{
+	font-weight: 900; 
+}
+
+.complemento{
+	font-weight: 500; 
+}
+
+@media only screen and (max-width: 1280px) {
+	h1{
+		font-size: 26px;
+	}
+
+    .des{
+    	font-size: 20px;
+    }
+
+    .logo{
+		padding-left: 10px;
+    }
+
+    #trofeo{
+    	margin-left:20px;
+    }
+
+    .fotoUsuario{
+    	padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 415px){
+	h1{
+		font-size: 36px;
+	}
+
+	.logo{
+		padding-left: 400px;
+    }
+
+    #trofeo{
+    	margin-left: 260px;
+    }
+
+    .fotoUsuario{
+    	padding-left: 400px;
+    }
+}
+
+.fotoUsuario{
+	height: 80px;
+	width: 80px;
+	border-radius: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.numero{
+	padding-right: 3px;
+	color: #fff;
+}
+
+.textoNum{
+	color: #b1b1b1;
+}
+
+p{
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+#trofeo{
+	height: 80px;
+	width: 80px;
+	border-radius: 80px;
+	background-image: url("../imagenes/logoTrofeo.gif");
+	background-position: center;
+	background-size: 82px 82px;
+}
