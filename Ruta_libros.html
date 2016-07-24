@@ -16,7 +16,7 @@
       html, body {
         height: 100%;
         margin: 0;
-        padding: 1.3%;
+        /*padding: 1.3%;*/
           background-color: floralwhite;
       }
       #map {
@@ -148,6 +148,11 @@
 
 #libros{
 	background-image: url("imagenes/barraLibro.gif");
+	padding=0px;
+}
+
+#todo{
+	padding: 1.3%;
 }
     </style>
   </head>
@@ -165,6 +170,7 @@
 			</tr>
 		</table>
 	</div>
+	<div id="todo">
     <table align="center" width="100%">
         <tr>
             <th><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Librería Popular</button>
@@ -219,6 +225,7 @@
       <input type="submit" id="submit">
     </div>
     
+    </div>
     </div>
     <script>
 function initMap() {
